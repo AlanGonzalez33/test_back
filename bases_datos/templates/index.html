@@ -10,7 +10,7 @@
 
     <ul>
         {% for usuario in usuarios %}
-            <li>{{ usuario.nombre }} - {{ usuario.email }}</li>
+            <li>{{ usuario.nombre }} - {{ usuario.email }} - {{usuario.contraseña}}</li>
         {% endfor %}
     </ul>
 
@@ -21,6 +21,9 @@
         <br>
         <label for="email">Email:</label>
         <input type="email" name="email" required>
+        <br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="contraseña" name="contraseña" required>
         <br>
         <button type="submit">Agregar Usuario</button>
     </form>
