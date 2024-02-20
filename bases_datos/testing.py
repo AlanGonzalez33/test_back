@@ -1,10 +1,10 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask, render_template, jsonify
-
+import mysql.connector
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:Cisco123!@localhost/Data_base_test'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://Alan:Agonzalez3@localhost/Data_base_test'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
